@@ -1,0 +1,175 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <h4 class="card-title">New Job Entry</h4>
+                        <p class="card-category">Details about new job</p>
+                    </div>
+                    <div class="card-body">
+                        
+                           <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="client">Client Name:</label>
+                                        <input  required type="type" class="form-control" id="clientName" [(ngModel)]="data.clientName">
+                                      </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="client">Client Address:</label>
+                                        <input type="type" class="form-control" id="clientAddress" [(ngModel)]="data.clientAddress">
+                                      </div>
+                                </div> 
+                           </div>
+  
+                           <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="client">Date</label>
+                                      <input type="date" class="form-control" id="clientName" [(ngModel)]="data.jobDate">
+                                    </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="client">PO NO</label>
+                                      <input type="type" class="form-control" id="clientAddress" [(ngModel)]="data.pono">
+                                    </div>
+                              </div> 
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="client">Part NO</label>
+                                      <input type="type" class="form-control" id="clientAddress" [(ngModel)]="data.partNO">
+                                    </div>
+                              </div> 
+                         </div>
+  
+                         <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="client">Serial No.</label>
+                                    <input type="type" class="form-control" id="clientName">
+                                  </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="client">Heat No</label>
+                                    <input type="type" class="form-control" id="clientAddress">
+                                  </div>
+                            </div> 
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="client">Heat lot No</label>
+                                    <input type="type" class="form-control" id="clientAddress">
+                                  </div>
+                            </div> 
+                          </div>
+  
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="client">Quantity</label>
+                                      <input type="number" class="form-control" id="clientName">
+                                    </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="client">Job WO</label>
+                                      <input type="type" class="form-control" id="clientAddress">
+                                    </div>
+                              </div> 
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label for="client">TC NO</label>
+                                      <input type="type" class="form-control" id="clientAddress">
+                                    </div>
+                              </div> 
+                            </div>
+  
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="client"> Coating Specification        </label>
+                                        <input type="type" class="form-control" id="clientName">
+                                      </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="client">Coating System</label>
+                                        <input type="type" class="form-control" id="clientAddress">
+                                      </div>
+                                </div> 
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="client">Description</label>
+                                        <input type="type" class="form-control" id="clientAddress">
+                                      </div>
+                                </div> 
+                              </div>
+  
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="client"> Masking Requirements   </label>
+                                          <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="radio" name="maskingRequired" value="yes"> Yes<br>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="radio" name="maskingRequired" value="no"> No<br>
+                                            </div>
+                                          </div>
+                                        </div>
+                                  </div>
+  
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="client"> NACE Level II Certification   </label>
+                                          <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="radio" name="NACECERTIFICATE" value="yes"> Yes<br>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="radio" name="NACECERTIFICATE" value="no"> No<br>
+                                            </div>
+                                          </div>
+                                        </div>
+                                  </div>
+  
+  
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="client"> Incoming Inspector        </label>
+                                              <select class="custom-select">
+                                                  <option class="ng-tns-c5-0" selected="">Select Inspector</option>
+                                                  <option class="ng-tns-c5-0" value="1">Ajay Mahajan</option>
+                                                  <option class="ng-tns-c5-0" value="2">Ramesh Patil</option>
+                                                  <option class="ng-tns-c5-0" value="3">Soham Gupta</option>
+                                                </select>
+                                            </div>
+                                      </div>
+  
+                                      <div class="col-md-12" style="padding-right: 0px;">
+                                          <div class="form-group">
+                                              <label for="client"> <span></span> </label>
+                                              <button class="btn btn-info" (click)="validateData()">Save</button>
+                                            </div>
+                                      </div>
+                                     
+                                    </div>
+                                 
+                                </div>
+  
+                            
+  
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+  </div>
+  

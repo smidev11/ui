@@ -1,0 +1,34 @@
+{
+  "api": {
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  
+    "job": 
+        [
+          {"clientName":"TestCviaPost1","address":"addvipostman1","coatingSpec":null,"coatingSys":null,"tcno":"TC-9991","date":null,"maskingReq":null,"nacelevelcert":null,"inspector":null,"partList":[{"pono":null,"partno":null,"serialno":null,"heatno":null,"heatlotno":null,"partname":"Part2","qnt":null,"jobwo":null,"tcno":null,"revNo":"3","inspector":"VT"},{"pono":null,"partno":null,"serialno":null,"heatno":null,"heatlotno":null,"partname":"Part1","qnt":null,"jobwo":null,"tcno":null,"revNo":null,"inspector":"AM"}]},
+        
+          {"clientName":"TestCviaPost1","address":"addvipostman1","coatingSpec":null,"coatingSys":null,"tcno":"TC-9991","date":null,"maskingReq":null,"nacelevelcert":null,"inspector":null,
+           "partList":[
+              {"pono":null,"partno":null,"serialno":null,"heatno":null,"heatlotno":null,"partname":"Part2","qnt":null,"jobwo":null,"tcno":null,"revNo":"3","inspector":"VT"},
+              {"pono":null,"partno":null,"serialno":null,"heatno":null,"heatlotno":null,"partname":"Part1","qnt":null,"jobwo":null,"tcno":null,"revNo":null,"inspector":"AM"}
+          ]
+         }
+    ]
+  
+}
+}

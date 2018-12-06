@@ -1,0 +1,70 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                
+                
+                <div> 
+                           <button class="btn btn-primary" (click)="createEmptyObject()">Add Record </button>  
+                           <button class="btn btn-success" (click)="createEmptyObject()">Save </button>
+                </div>
+                
+                
+                
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Score in 1</th>
+                                    <th scope="col">Score in 2</th>
+                                    <th scope="col">EMP</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                  <tr *ngFor = "let item of data ">
+                                  
+                                        <th *ngIf="!item.edit">#</th>
+                                        <th *ngIf="!item.edit" (dblclick)="edit(item)">{{item.name}}</th>
+                                        <th *ngIf="!item.edit">{{item.score1}}</th>
+                                        <th *ngIf="!item.edit">{{item.score2}}</th>
+                                        <th *ngIf="!item.edit">{{item.emp}}</th>
+                                        <th *ngIf="!item.edit">{{item.total}}</th>
+            
+            
+                                        <th *ngIf="item.edit">#</th>
+                                        <th *ngIf="item.edit"> <input [(ngModel)]="item.name" type="text" (blur)="onBlur(item)"/></th>
+                                        <th *ngIf="item.edit"><input [(ngModel)]="item.score1" type="number" (blur)="onBlur(item)"/></th>
+                                        <th *ngIf="item.edit"><input [(ngModel)]="item.score2" type="number" /></th>
+                                        <th *ngIf="item.edit">
+                                                <div class="form-group">
+                                                        <label for="sel1">Select list:</label>
+                                                        <select class="form-control" id="sel1" [(ngModel)]="item.emp">
+                                                          <option>CM</option>
+                                                          <option>AM</option>
+                                                          <option>PM</option>
+                                                          <option>DM</option>
+                                                        </select>
+                                                      </div>
+            
+                                        </th>
+                                        <th *ngIf="item.edit"><input [(ngModel)]="item.total" type="number"/></th>
+                                        <th *ngIf="item.edit"><button class="btn btn-danger" (click)="save(item)">Save </button> </th>
+                                        <th *ngIf="item.edit"><button class="btn btn-danger" (click)="cancel(item)">Cancel </button> </th>
+                                  
+                                    
+                                  </tr>
+                                </tbody>
+                              </table>  
+                
+                              
+              </div>
+          </div>
+          
+  </div>
+</div>
+</div>
